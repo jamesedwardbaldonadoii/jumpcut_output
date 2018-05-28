@@ -1,0 +1,492 @@
+html,
+body {
+	background-color: #0c131b;
+	color: #fff;
+	font-family: 'Nunito Sans',sans-serif;
+	font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	text-transform: uppercase;
+}
+
+p {
+	color: #9ca3ab;
+}
+
+label.company-name {
+	font-family: "Fugaz One", sans-serif, cursive;
+	font-size: 27px;
+	text-transform: uppercase;
+}
+
+.main-cointainer {
+	max-width: 1200px;
+	margin: auto;
+	padding: 50px 100px 30px 100px;
+}
+
+.header > div {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 80px;
+	margin: 130px 0 200px 0;
+	text-align: left;
+}
+
+.header h1 {
+	color: #50f8df;
+	font-size: 20px;
+	margin-top: 0;
+}
+
+.header h2 {
+	font-size: 4em;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+}
+
+.header h3 {
+	color: #7d7c81;
+	font-size: 30px;
+	font-weight: normal;
+	margin: auto;
+}
+
+.header img {
+	width: 100%;
+}
+
+.cointainer h1 {
+	font-size: 2.5em;
+	text-align: center;
+	margin: 80px auto;
+}
+
+.cointainer .students {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px;
+	text-align: center;
+}
+
+.cointainer .students h2 {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.cointainer .students .info {
+	display: inline-block;
+	margin: auto;
+}
+
+.cointainer .students .info p {
+	font-size: 16px;
+	line-height: 12px;
+	text-align: left;
+}
+
+.cointainer .students > div {
+	border: 1px solid #2f363e;
+	padding: 50px;
+}
+
+.cointainer .students label {
+	color: #50f8df;
+	display: block;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.cointainer .bottom {
+	font-size: 16px;
+	padding: 75px;
+	text-align: center;
+}
+
+.cointainer .btn-primary {
+	background-color: #0c131b;
+	border: 2px solid #50f8df;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+	outline: none;
+	padding: 10px 15px;
+}
+
+.cointainer .btn-primary span {
+    line-height: 30px;
+	vertical-align: text-bottom;
+}
+
+.cointainer .btn-primary:hover {
+	background-color: rgba(80, 248, 223, .05);
+}
+
+.cointainer .btn-primary .fa-youtube-play {
+	color: #50f8df;
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+.cointainer .btn-primary .fa-chevron-right {
+	margin-left: 20px;
+}
+
+.footer {
+	border-top: 1px solid #2f363e;
+	padding-top: 40px;
+	text-align: center;
+}
+
+.footer p {
+	line-height: 10px;
+}
+
+.footer p:last-child {
+	margin-top: 50px;
+}
+
+.footer a {
+	color: #50f8df;
+	text-decoration: none;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.modal {
+	animation: blowUpContent 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+	background-color: rgba(0, 0, 0, 0.59);
+	display: none;
+	height: 100%;
+	left: 0;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.modal-content {
+	background-color: rgba(70, 70, 70, 0.7);
+	border: 5px solid rgba(70, 70, 70, 0.7);
+	border-radius: 5px;
+	margin: 15% auto;
+	max-width: 1000px;
+	position: relative;
+}
+
+.modal-content > div {
+	background-color: #fff;
+	padding: 20px 30px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.modal-content .input {
+	background-color: #f1f1f1;
+	background-position: 99%;
+	border: 3px solid rgba(0,0,0,0.2);
+	border-radius: 5px;
+	display: block;
+	font-size: 21px;
+	margin: 20px auto;
+	outline: none;
+	padding: 12px 35px 12px 20px;
+	text-align: center;
+	width: calc(100% - 55px);
+}
+
+.modal-content .input:focus {
+	border-color: #42b0e2;
+}
+
+.modal-content .input.name {
+	background-image: url(images/name.png);
+	background-repeat: no-repeat;
+}
+
+.modal-content .input.email {
+	background-image: url(images/email.png);
+	background-repeat: no-repeat;
+}
+
+.modal-content .submit {
+	background-color: rgb(228, 59, 44);
+	border-bottom: 3px solid rgba(0,0,0,0.2);
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-size: 23px;
+	outline: none;
+	padding: 13px 35px;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.modal-content .submit:hover {
+	background-color: #cd291a;
+}
+
+.modal-content label {
+	color: rgba(47, 47, 47, 0.529412);
+	font-size: 16px;
+	line-height: 4em;
+}
+
+.modal-content h1 {
+	text-align: center;
+	color: rgb(45, 45, 45);
+	font-size: 33px;
+	margin: auto;
+	letter-spacing: 2px;
+	text-transform: none;
+}
+
+.modal-content .close {
+	top: -20px;
+	right: -20px;
+	position: absolute;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@keyframes blowUpContent {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+	.cointainer .students .info p {
+		font-size: 14px;
+	}
+
+	.cointainer .students h2 {
+		font-size: 1.2em;
+	}
+
+	.cointainer .students > div {
+		padding: 30px;
+	}
+
+	.cointainer .students {
+		grid-gap: 30px;
+	}
+
+	.header h1 {
+		font-size: 18px;
+	}
+
+	.header h2 {
+		font-size: 3.2em;
+	}
+
+	.header h3 {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.main-cointainer {
+		padding: 50px;
+	}
+
+	.cointainer h1 {
+		font-size: 2em;
+	}
+
+	.cointainer .students {
+		grid-gap: 20px;
+	}
+
+	.header h1 {
+		font-size: 16px;
+	}
+
+	.header h2 {
+		font-size: 2.9em;
+	}
+
+	.header h3 {
+		font-size: 22px;
+	}
+
+	.modal-content {
+		width: 98%;
+	}
+
+	.modal-content .close {
+		right: -10px;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.cointainer h1 {
+		font-size: 1.5em;
+	}
+
+	.cointainer .students .info p {
+		font-size: 12px;
+	}
+
+	.cointainer .students > div {
+		padding: 20px;
+	}
+
+	.cointainer .students {
+		grid-gap: 10px;
+	}
+
+	.header h1 {
+		font-size: 12px;
+	}
+
+	.header h2 {
+		font-size: 2.0em;
+	}
+
+	.header h3 {
+		font-size: 20px;
+	}
+
+	.modal-content h1 {
+		font-size: 27px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.header > div {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr;
+		grid-gap: 40px;
+		margin: 100px 0px;
+		text-align: left;
+	}
+
+	.header h1 {
+		font-size: 14px;
+	}
+
+	.header h2 {
+		font-size: 2.0em;
+	}
+
+	.header h3 {
+		font-size: 20px;
+	}
+
+	.cointainer .bottom {
+		padding: 75px 0px;
+	}
+
+	.cointainer h1 {
+		font-size: 1.2em;
+	}
+
+	.cointainer .students {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(3, 1fr);
+		grid-gap: 10px;
+	}
+
+	.cointainer .students > div {
+		max-width: 350px;
+		margin: auto;
+	}
+
+	.cointainer .students .info p {
+		font-size: 16px;
+	}
+
+	.footer p {
+		line-height: 15px;
+	}
+
+	.modal-content h1 {
+		font-size: 20px;
+	}
+
+	/*FALLBACK CSS IF GRID IS NOT SUPPORTED/ FOR OLDER BROWSER Version*/
+	.cointainer .students > div,
+	.header > div div{
+		float: none;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.main-cointainer {
+		padding: 50px 10px;
+	}
+
+	.header > div {
+		margin-top: 50px;
+	}
+
+	.header h2 {
+		font-size: 1.5em;
+	}
+
+	.header h3 {
+		font-size: 16px;
+	}
+
+	.footer p {
+		font-size: 12px;
+	}
+
+	.cointainer .btn-primary {
+		font-size: 14px;
+	}
+
+	.cointainer .btn-primary .fa-chevron-right {
+		margin-left: 5px;
+	}
+
+	.modal-content h1 {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.cointainer h1 {
+		font-size: 12px;
+	}
+
+	.header h3 {
+		font-size: 14px;
+	}
+
+	.cointainer .btn-primary {
+		font-size: 12px;
+		padding: 6px;
+	}
+
+	.modal-content .submit {
+		font-size: 4vmin;
+		padding: 13px 20px;
+	}
+}
+
+/*FALLBACK CSS IF GRID IS NOT SUPPORTED/ FOR OLDER BROWSER Version*/
+.cointainer .students > div,
+.header > div div{
+	float: left;
+}
