@@ -23,7 +23,7 @@ label.company-name {
 	text-transform: uppercase;
 }
 
-.main-cointainer {
+.main-container {
 	max-width: 1200px;
 	margin: auto;
 	padding: 50px 100px 30px 100px;
@@ -60,54 +60,54 @@ label.company-name {
 	width: 100%;
 }
 
-.cointainer h1 {
+.container h1 {
 	font-size: 2.5em;
 	text-align: center;
 	margin: 80px auto;
 }
 
-.cointainer .students {
+.container .students {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 40px;
 	text-align: center;
 }
 
-.cointainer .students h2 {
+.container .students h2 {
 	margin-top: 10px;
 	margin-bottom: 30px;
 }
 
-.cointainer .students .info {
+.container .students .info {
 	display: inline-block;
 	margin: auto;
 }
 
-.cointainer .students .info p {
+.container .students .info p {
 	font-size: 16px;
 	line-height: 12px;
 	text-align: left;
 }
 
-.cointainer .students > div {
+.container .students > div {
 	border: 1px solid #2f363e;
 	padding: 50px;
 }
 
-.cointainer .students label {
+.container .students label {
 	color: #50f8df;
 	display: block;
 	font-size: 20px;
 	margin-top: 20px;
 }
 
-.cointainer .bottom {
+.container .bottom {
 	font-size: 16px;
 	padding: 75px;
 	text-align: center;
 }
 
-.cointainer .btn-primary {
+.container .btn-primary {
 	background-color: #0c131b;
 	border: 2px solid #50f8df;
 	color: #fff;
@@ -117,22 +117,22 @@ label.company-name {
 	padding: 10px 15px;
 }
 
-.cointainer .btn-primary span {
+.container .btn-primary span {
     line-height: 30px;
 	vertical-align: text-bottom;
 }
 
-.cointainer .btn-primary:hover {
+.container .btn-primary:hover {
 	background-color: rgba(80, 248, 223, .05);
 }
 
-.cointainer .btn-primary .fa-youtube-play {
+.container .btn-primary .fa-youtube-play {
 	color: #50f8df;
 	font-size: 30px;
 	margin-right: 10px;
 }
 
-.cointainer .btn-primary .fa-chevron-right {
+.container .btn-primary .fa-chevron-right {
 	margin-left: 20px;
 }
 
@@ -274,19 +274,19 @@ label.company-name {
 }
 
 @media screen and (max-width: 1300px) {
-	.cointainer .students .info p {
+	.container .students .info p {
 		font-size: 14px;
 	}
 
-	.cointainer .students h2 {
+	.container .students h2 {
 		font-size: 1.2em;
 	}
 
-	.cointainer .students > div {
+	.container .students > div {
 		padding: 30px;
 	}
 
-	.cointainer .students {
+	.container .students {
 		grid-gap: 30px;
 	}
 
@@ -304,15 +304,15 @@ label.company-name {
 }
 
 @media screen and (max-width: 1150px) {
-	.main-cointainer {
+	.main-container {
 		padding: 50px;
 	}
 
-	.cointainer h1 {
+	.container h1 {
 		font-size: 2em;
 	}
 
-	.cointainer .students {
+	.container .students {
 		grid-gap: 20px;
 	}
 
@@ -338,19 +338,19 @@ label.company-name {
 }
 
 @media screen and (max-width: 950px) {
-	.cointainer h1 {
+	.container h1 {
 		font-size: 1.5em;
 	}
 
-	.cointainer .students .info p {
+	.container .students .info p {
 		font-size: 12px;
 	}
 
-	.cointainer .students > div {
+	.container .students > div {
 		padding: 20px;
 	}
 
-	.cointainer .students {
+	.container .students {
 		grid-gap: 10px;
 	}
 
@@ -393,26 +393,26 @@ label.company-name {
 		font-size: 20px;
 	}
 
-	.cointainer .bottom {
+	.container .bottom {
 		padding: 75px 0px;
 	}
 
-	.cointainer h1 {
+	.container h1 {
 		font-size: 1.2em;
 	}
 
-	.cointainer .students {
+	.container .students {
 		grid-template-columns: auto;
 		grid-template-rows: repeat(3, 1fr);
 		grid-gap: 10px;
 	}
 
-	.cointainer .students > div {
+	.container .students > div {
 		max-width: 350px;
 		margin: auto;
 	}
 
-	.cointainer .students .info p {
+	.container .students .info p {
 		font-size: 16px;
 	}
 
@@ -425,14 +425,14 @@ label.company-name {
 	}
 
 	/*FALLBACK CSS IF GRID IS NOT SUPPORTED/ FOR OLDER BROWSER Version*/
-	.cointainer .students > div,
+	.container .students > div,
 	.header > div div{
 		float: none;
 	}
 }
 
 @media screen and (max-width: 650px) {
-	.main-cointainer {
+	.main-container {
 		padding: 50px 10px;
 	}
 
@@ -452,11 +452,11 @@ label.company-name {
 		font-size: 12px;
 	}
 
-	.cointainer .btn-primary {
+	.container .btn-primary {
 		font-size: 14px;
 	}
 
-	.cointainer .btn-primary .fa-chevron-right {
+	.container .btn-primary .fa-chevron-right {
 		margin-left: 5px;
 	}
 
@@ -466,7 +466,7 @@ label.company-name {
 }
 
 @media screen and (max-width: 500px) {
-	.cointainer h1 {
+	.container h1 {
 		font-size: 12px;
 	}
 
@@ -474,7 +474,7 @@ label.company-name {
 		font-size: 14px;
 	}
 
-	.cointainer .btn-primary {
+	.container .btn-primary {
 		font-size: 12px;
 		padding: 6px;
 	}
@@ -486,7 +486,7 @@ label.company-name {
 }
 
 /*FALLBACK CSS IF GRID IS NOT SUPPORTED/ FOR OLDER BROWSER Version*/
-.cointainer .students > div,
+.container .students > div,
 .header > div div{
 	float: left;
 }
